@@ -56,7 +56,8 @@
         }
         .paras{
             display: flex;
-            gap: 35px;
+            gap: 30px;
+            font-size: 11px;
         }
         #main-image{
             width: 100%;
@@ -70,6 +71,53 @@
             bottom: 13rem;
             left: 9.5rem;
         }
+        .filter-bars{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid blue;
+            gap: 20px;
+        }
+        .filter-bars > input {
+            height: 19px;
+        }
+        .location, .date, .people{
+            display: flex;
+            height: 5.8vh;
+            align-items: center;
+
+        }
+        .locationx{
+            padding: 35px;
+            height: 15vh;
+        }
+        #download-icon-1 , #download-icon-2 , #download-icon-3{
+            width: 20px;
+            height: 20px;
+            position: relative;
+            left: 28px;
+            margin: auto;
+            margin-right: 10px;
+        }
+        input::placeholder{
+            color: black;
+            text-align: center;
+            padding-left: 10px;
+        }
+        .models{
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid;
+
+        }
+        #models-section{
+            margin-left: 45px;
+        }
+        #model1{
+            width: 45vh;
+            height: 50vh;
+            border-radius: 16px;
+        }
     </style>
     
 </head>
@@ -78,7 +126,7 @@
         <nav>
             <h1 id="title">FeWo-direKt</h1>
             <div class="herunterladen">
-                <img src="./download.png" alt="download-icon" id="download-icon">
+                <img src="./download.png" alt="download-icon" id="download-icon" >
                 <p>App herunterladen</p>
             </div>
             <div class="paras">
@@ -91,24 +139,65 @@
         </nav>
     </div>
 
+    
     <div class="main-image-page">
         <img src="./marek-levak-RErhr8r1q6s-unsplash.jpg" alt="resort-image" id="main-image">
         <h2 id="overlay-text">Alles gut, du buchst bei FeWo-direkt</h2>
+    </div>
+    <!--
         <div class="filter-bars">
             <div class="location">
-                <img src="./location_535239.png" alt="location-icon">
-                <input type="text" name="location" id="location">
+                <img src="./location_535239.png" alt="location-icon" id="download-icon-1">
+                <input type="text" name="location" id="locationx" placeholder="Wo soll's hingehen ">
             </div>
             <div class="date">
-                <img src="./calendar_747310.png" alt="calendar">
+                <img src="./calendar_747310.png" alt="calendarx" id="download-icon-2">
+                <div class="dates">
+                    <p>Daten</p>
+                    <p>16.Nov.-30.Nov.</p>
+                </div>
+
                 <input type="text" name="calendar" id="calendar">
             </div>
             <div class="people">
-                <img src="./app_14278234.png" alt="people">
-                <input type="text" name="person" id="person">
+                <img src="./app_14278234.png" alt="people" id="download-icon-3">
+                <input type="text" name="person" id="personx">
             </div>
             <button type="submit">Searching</button>
         </div>
-    </div>
+-->
+    <section id="models-section">
+        <h2>Finde Unterkünfte ganz nach deinem Geschmack</h2>
+        <div class="models">
+            <div class="model1">
+                <img src="./bernard-hermant--IwbJJfoC80-unsplash.jpg" alt=""  id="model1">
+
+                <p>Ferienhaus</p>
+            </div>
+
+            <!--
+
+            <div class="model1">
+                <img src="./gabriel-ghnassia-A9h6OsAxTyQ-unsplash.jpg" alt="">
+                <p>Ferienhaus</p>
+            </div>
+
+            <div class="model1">
+                <img src="./karsten-winegeart-XnHWVjYziCo-unsplash.jpg" alt="">
+                <p>Ferienhutte</p>
+            </div>
+
+            <div class="model1">
+                <img src="./kelly-sikkema-GmEhQaTMYXw-unsplash.jpg" alt="">
+                <p>Ferienhutte</p>
+            </div>
+
+            <div class="model1">
+                <img src="./rachel-coyne-SuSqYU6CJXk-unsplash.jpg" alt="">
+                <p>Ferienhutte</p>
+            </div>
+        </div>
+    </section>
+
 </body>
 </html>
